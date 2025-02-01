@@ -219,15 +219,15 @@
         
         setTimeout(() => {
             document.getElementById('notification-bar').style.opacity = '1';
-        }, 400); // Show after 40 seconds
+        }, 15000); // Show after 40 seconds
 
         function closeNotification() {
             document.getElementById('notification-bar').style.opacity = '0';
         }
         
         
-        const firstPopupDelay = 80000; // 20 seconds delay after page load
-        const popupInterval = 900000;   // 15 seconds between popups
+        const firstPopupDelay = 300000; // 20 seconds delay after page load
+        const popupInterval = 800000;   // 15 seconds between popups
 
         function showAd() {
             const lastPopupTime = localStorage.getItem('lastPopupTime');
