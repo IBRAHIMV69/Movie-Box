@@ -40,7 +40,7 @@
         }
         .header .logo {
             font-size: 22px;
-            border: 1px solid #00b300;
+            border: 1px solid #000;
             background-color: rgba(0, 0, 0, 0.9);
             color: #00b300;
             border-radius: 20px;
@@ -480,8 +480,8 @@
         }
         
         
-        const firstPopupDelay = 200000; // 20 seconds delay after page load
-        const popupInterval = 150000;   // 15 seconds between popups
+        const firstPopupDelay = 15000; // 20 seconds delay after page load
+        const popupInterval = 800000;   // 15 seconds between popups
 
         function showAd() {
             const lastPopupTime = localStorage.getItem('lastPopupTime');
