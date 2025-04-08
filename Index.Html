@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix Style Video Page</title>
+    <title>MovieGram</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <style>
         * {
@@ -30,7 +30,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0px 20px;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: #1A1A24;
             z-index: 1000;
         }
         .header .logo-container {
@@ -39,9 +39,9 @@
             gap: 10px;
         }
         .header .logo {
-            font-size: 22px;
+            font-size: 25px;
             border: 1px solid #;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: ;
             color: #00b300;
             border-radius: 20px;
             padding: 5px 8px;
@@ -61,10 +61,11 @@
         }
         .header .play-button,
         .header .download-button {
-            background: linear-gradient(to right, #004d00, #00b300);
+            background-color: #008000;
             color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
+            font-size: 15px;
+            padding: 5px 10px;
+            border-radius: 10px;
             margin-bottom: 8px;
             font-weight: bold;
             cursor: pointer;
@@ -88,7 +89,7 @@
         /* Play In App Button */
         .play-in-app-container {
             position: fixed;
-            bottom: 68px;
+            bottom: 67px;
             left: 50%;
             transform: translateX(-50%);
             text-align: center;
@@ -97,12 +98,13 @@
         .play-in-app-button {
             background: linear-gradient(to right, #00b300, #008000); /* Green gradient */
             color: white;
-            padding: 12px 20px;
+            padding: 12px 24px;
             border-radius: 30px;
             font-weight: bold;
             cursor: pointer;
             border: none;
             font-size: 16px;
+            border: 1px solid #ccc;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             position: relative;
             overflow: hidden;
@@ -207,7 +209,7 @@
             align-items: center;
             padding: 0px 0;
             border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: #1A1A24;
             position: fixed;
             bottom: 0;
             left: 0;
@@ -225,7 +227,7 @@
             padding: 10px 0;
         }
         footer .nav-icon i {
-            font-size: 20px;
+            font-size: 19px;
             margin-bottom: 5px;
             transition: 0.3s;
         }
@@ -240,7 +242,7 @@
         }
         footer .nav-icon span {
             display: block;
-            font-size: 10px;
+            font-size: 9px;
             margin-top: 0px;
         }
         .notification-bar {
@@ -340,17 +342,17 @@
         }
     </style>
 </head>
-<script type='text/javascript' src='//pl26103925.effectiveratecpm.com/8a/7c/6a/8a7c6a75901a82de9fc4672c2622d264.js'></script>
+<script type='text/javascript' src='//pl26103925.profitableratecpm.com/8a/7c/6a/8a7c6a75901a82de9fc4672c2622d264.js'></script>
 <body>
     
     <!-- Header -->
     <div class="header">
         <div class="logo-container">
             <i class="fas fa-bars bars-icon" onclick="toggleSidebar()"></i>
-            <div class="logo">i Tube</div>
+            <div class="logo">MovieGram</div>
         </div>
         <div class="button-group">
-            <button class="download-button" id="download-button">Open App</button>
+            <button class="download-button" id="download-button"><i class="fas fa-download"></i> Get App</button>
         </div>
     </div>
 
@@ -386,7 +388,7 @@
 
     <!-- Play In App Button -->
     <div class="play-in-app-container">
-        <button class="play-in-app-button" id="play-in-app-button">Play In App</button>
+        <button class="play-in-app-button" id="play-in-app-button"><i class="fas fa-futbol"></i> <!-- fa-futbol --> Sports</button>
     </div>
 
     <!-- Ad Popup -->
@@ -400,13 +402,6 @@
         </div>
     </div>
     
-    <div class="notification-bar" id="notification-bar">
-        <img src="https://h5-static.aoneroom.com/oneroomStatic/public/_nuxt/web-logo.apJjVir2.svg" alt="App Logo">
-        <div class="notification-text">Enjoy more unparalleled movies download Moviebox.</div>
-        <button class="notification-button" onclick="window.open('https://ucarecdn.com/82947fa9-98e5-4948-89ec-8fedd32b4be4/', '_blank')">OPEN</button>
-        <button class="close-button" onclick="closeNotification()">✖</button>
-    </div>
-
     <div class="frame-container">
         <iframe id="video-frame" src="https://moviebox.ng/web/filter?tab=movie" allowfullscreen></iframe>
     </div>
@@ -429,8 +424,8 @@
             <span>Ranking</span>
         </div>
         <div class="nav-icon" data-video="https://moviebox.ng/web/filter?tab=anime">
-            <i class="fas fa-futbol"></i>
-            <span>Sports</span>
+            <i class="fas fa-theater-masks"></i>
+            <span>Animation</span>
         </div>
     </footer>
 
@@ -447,16 +442,16 @@
         const playInAppButton = document.getElementById('play-in-app-button');
 
         // Change Logo Text
-        logo.innerText = 'MovieBox'; // Replace with your desired logo text
+        logo.innerText = 'Movie Gram'; // Replace with your desired logo text
 
         // Change Download Button URL
         downloadButton.onclick = () => {
-            window.location.href = 'https://example.com/download-app'; // Replace with your desired URL
+            window.location.href = 'https://spa.aisports.cc/h5-live/matches'; // Replace with your desired URL
         };
 
         // Change Play In App Button URL
         playInAppButton.onclick = () => {
-            window.location.href = 'https://example.com/download-app'; // Same URL as the Download App button
+            window.location.href = 'https://spa.aisports.cc/h5-live/matches'; // Same URL as the Download App button
         };
 
         // Rest of the JavaScript functionality
@@ -481,7 +476,7 @@
         }
         
         
-        const firstPopupDelay = 1000; // 20 seconds delay after page load
+        const firstPopupDelay = 1000000000; // 20 seconds delay after page load
         const popupInterval = 1000000000;   // 15 seconds between popups
 
         function showAd() {
@@ -509,6 +504,6 @@
         // Start the first popup after 20 seconds
         setTimeout(showAd, firstPopupDelay);
     </script>
+    <script type='text/javascript' src='//pl25740297.profitableratecpm.com/ea/78/09/ea780955042f3fb006a36d70c5b940ec.js'></script>
 </body>
-<script type='text/javascript' src='//pl25740297.profitablecpmrate.com/ea/78/09/ea780955042f3fb006a36d70c5b940ec.js'></script>
 </html>
